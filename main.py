@@ -1,15 +1,20 @@
 import random
 import string
 
-
-result = ""
 # Function to get a random character/digit
 def rand_char():
     possibilities = string.ascii_lowercase + string.ascii_uppercase + string.digits
     return random.choice(possibilities)
+  
+def get_count():
+    value = int(input("Pick A Number: "))
+    return value 
 
-for i in range(10):
+count = get_count()
+
+result = ""
+
+for i in range(count):
     result += rand_char()
 
 print(result)
-
