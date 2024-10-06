@@ -17,4 +17,4 @@ result = ""
 for i in range(count):
     result += rand_char()
 
-print(result)
+print(f'A random password with {count} characters is {result}.')
